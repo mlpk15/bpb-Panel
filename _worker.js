@@ -544,7 +544,7 @@ function processVlessHeader(vlessBuffer, userID) {
 			const dataView = new DataView(
 				vlessBuffer.slice(addressValueIndex, addressValueIndex + addressLength)
 			);
-			// 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+			// 2606:4700:2e:5122:e70c:8b4b:f93e:5252
 			const ipv6 = [];
 			for (let i = 0; i < 8; i++) {
 				ipv6.push(dataView.getUint16(i * 2).toString(16));
